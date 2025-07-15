@@ -1,0 +1,7 @@
+---
+- name: Ensure connectivity
+  hosts: rocky
+  become: true
+  tasks:
+      - name: is it reachable
+        ansible.builtin.ping:
